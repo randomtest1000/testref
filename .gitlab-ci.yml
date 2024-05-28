@@ -5,7 +5,7 @@ before_script:
   - ":"
 pages:
   script:
-    - console.log(10)
+    - echo "test"
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
