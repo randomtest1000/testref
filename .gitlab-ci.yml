@@ -6,7 +6,8 @@ before_script:
 pages:
   environment: "test"
   script:
-    - echo "test1102"
+    - echo "test1102j"
+    
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
