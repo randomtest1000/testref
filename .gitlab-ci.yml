@@ -13,4 +13,4 @@ pages:
       # The folder that contains the files to be exposed at the Page URL
       - public
   when:
-    merge_request_event
+    always
