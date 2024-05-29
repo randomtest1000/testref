@@ -6,7 +6,8 @@ before_script:
 pages:
   environment: "test"
   script:
-    - echo "test1102jtestsymnca"
+    - echo "test1102jtestsynca"
+    
     
   artifacts:
     paths:
@@ -15,4 +16,5 @@ pages:
   rules:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
