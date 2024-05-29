@@ -8,6 +8,7 @@ pages:
   script:
     - echo "test1102jtestsynca"
     
+    
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
