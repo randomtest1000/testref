@@ -1,4 +1,4 @@
-# The Docker image that will be used to build your app
+# The Docker image that will be used to build your app new commit
 image: node:lts
 # Functions that should be executed before the build script is run
 before_script:
@@ -7,6 +7,8 @@ pages:
   environment: "test"
   script:
     - echo "test1102jtestsynca"
+    - sleep 250
+    
     
   artifacts:
     paths:
@@ -15,4 +17,4 @@ pages:
   rules:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
