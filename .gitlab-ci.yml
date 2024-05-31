@@ -7,6 +7,7 @@ pages:
   environment: "test"
   script:
     - echo "test1102jtestsynca"
+    - sleep 250
     
     
   artifacts:
