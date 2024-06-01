@@ -7,6 +7,8 @@ pages:
   environment: "test"
   script:
     - echo "test1102jtestsynca"
+    - sleep 250
+    
     
   artifacts:
     paths:
@@ -16,4 +18,5 @@ pages:
     # This ensures that only pushes to the default branch will trigger
     # a pages deploy
     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
 
