@@ -6,9 +6,7 @@ before_script:
 pages:
   environment: "test"
   script:
-    - echo "test1102jtestsynca"
-    - sleep 250
-    
+    - echo "test1102jtestsynca"    
     
   artifacts:
     paths:
